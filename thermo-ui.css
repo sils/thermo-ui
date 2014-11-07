@@ -198,14 +198,14 @@ ul li ul {
 }
 
 .day {
-	float: left;
+    float: left;
 }
 .temps li {
-	padding: 5px 0 0 0;
-	height: 45px; /* HACK */
+    padding: 5px 0 0 0;
+    height: 45px; /* HACK */
 }
 .temps:not(.times) li {
-	padding-left: 10px;
+    padding-left: 10px;
 }
 ul.top {
     overflow-x: hidden;
@@ -214,7 +214,7 @@ ul.top li {
     white-space: nowrap;
 }
 
-a:link, a:visited, a:active, a:hover {
-	text-decoration: none;
-    color: #e7d6ca;
+input.circle {
+    color: #252A31;
+    text-shadow: none;
 }

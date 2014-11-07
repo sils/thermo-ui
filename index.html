@@ -16,85 +16,21 @@
 <![endif]-->
 </head>
 <body>
-	<div class="header">
-		<p>Wohnzimmer</p>
-		<p class="now"></p>
-		<p class="date"></p>
-	</div>
-	<div class="temp_control">
-		<p>Temperatur</p>
-		<div id="slider" class="slider"></div>
+  <div class="header">
+    <p>Wohnzimmer</p>
+    <p class="now"></p>
+    <p class="date"></p>
+  </div>
+  <div class="temp_control">
+    <p>Temperatur</p>
+    <div id="slider" class="slider"></div>
     <input type="hidden" id="slider_val" />
-	</div>
-	<div class="main">
-		<ul class="top">
-			<li>
-				<span class="day">Monday</span>
-				<ul class="temps">
-          <li><input type="text" class="circle" value="22" readonly /></li>
-          <li></li>
-          <li></li>
-          <li></li>
-
-          <li></li>
-          <li></li>
-					<li><input type="text" class="circle" value="17" readonly /></li>
-          <li></li>
-				</ul>
-			</li>
-		</ul>
-		<ul class="top">
-			<li>
-				<span class="day">Tuesday</span>
-				<ul class="temps">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-
-          <li><input type="text" class="circle" value="22" readonly /></li>
-          <li></li>
-          <li></li>
-          <li><input type="text" class="circle" value="17" readonly /></li>
-				</ul>
-			</li>
-		</ul>
-		<ul class="top">
-			<li>
-				<span class="day">Wednesday</span>
-				<ul class="temps">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-
-          <li><input type="text" class="circle" value="22" readonly /></li>
-          <li></li>
-          <li></li>
-          <li><input type="text" class="circle" value="17" readonly /></li>
-				</ul>
-			</li>
-		</ul>
-		<ul class="top">
-			<li>
-				<span class="day">Thursday</span>
-				<ul class="temps">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-
-          <li><input type="text" class="circle" value="22" readonly /></li>
-          <li></li>
-          <li></li>
-          <li><input type="text" class="circle" value="17" readonly /></li>
-				</ul>
-			</li>
-		</ul>
-		<ul class="top">
-			<li>
-				<span class="day">Friday</span>
-				<ul class="temps">
+  </div>
+  <div class="main">
+    <ul class="top">
+      <li>
+        <span class="day">Monday</span>
+        <ul class="temps">
           <li><input type="text" class="circle" value="22" readonly /></li>
           <li></li>
           <li></li>
@@ -104,25 +40,89 @@
           <li></li>
           <li><input type="text" class="circle" value="17" readonly /></li>
           <li></li>
-				</ul>
-			</li>
-		</ul>
-		<ul class="top">
-			<li>
-				<span class="trash">Delete</span>
-				<ul class="temps times">
-					<li>08:00</li>
-					<li>10:00</li>
-					<li>12:00</li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="top">
+      <li>
+        <span class="day">Tuesday</span>
+        <ul class="temps">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+
+          <li><input type="text" class="circle" value="22" readonly /></li>
+          <li></li>
+          <li></li>
+          <li><input type="text" class="circle" value="17" readonly /></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="top">
+      <li>
+        <span class="day">Wednesday</span>
+        <ul class="temps">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+
+          <li><input type="text" class="circle" value="22" readonly /></li>
+          <li></li>
+          <li></li>
+          <li><input type="text" class="circle" value="17" readonly /></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="top">
+      <li>
+        <span class="day">Thursday</span>
+        <ul class="temps">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+
+          <li><input type="text" class="circle" value="22" readonly /></li>
+          <li></li>
+          <li></li>
+          <li><input type="text" class="circle" value="17" readonly /></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="top">
+      <li>
+        <span class="day">Friday</span>
+        <ul class="temps">
+          <li><input type="text" class="circle" value="22" readonly /></li>
+          <li></li>
+          <li></li>
+          <li></li>
+
+          <li></li>
+          <li></li>
+          <li><input type="text" class="circle" value="17" readonly /></li>
+          <li></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="top">
+      <li>
+        <span class="trash">Delete</span>
+        <ul class="temps times">
+          <li>08:00</li>
+          <li>10:00</li>
+          <li>12:00</li>
           <li>14:00</li>
           <li>16:00</li>
           <li>18:00</li>
           <li>20:00</li>
-					<li>22:00</li>
-				</ul>
-			</li>
-		</ul>
-	</div>
+          <li>22:00</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
@@ -134,7 +134,6 @@ $(function() {
 
   var opt = {
     colors: ["#4ea6cf","#5ac5cf","#7dd7bf","#b1cfa1","#e5bf7c","#d79168","#cd7159","#c4463a"],
-    val: false
   }
 
   function bindSchedule() {
@@ -167,9 +166,7 @@ $(function() {
     value: 22,
     slide: function( event, ui ) {
       $(".active").data('val', ui.value);
-      if (opt.val) {
-        $(".active").val(ui.value);
-      }
+      $(".active").val(ui.value);
 
       var x = $(".active").data("val");
       $(".active").css("background-color", getColor(x));
@@ -183,10 +180,7 @@ $(function() {
   // use data instead of val if desired
   $(".temps li input").each(function() {
     $(this).data('val', $(this).val());
-    if (!opt.val) {
-      $(this).css("background", getColor($(this).val()));
-      $(this).val("");
-    }
+    $(this).css("background", getColor($(this).val()));
   });
 
   bindSchedule();
@@ -204,6 +198,7 @@ $(function() {
         $('<input type="text" class="circle" readonly />')
           .addClass('active')
           .val($("#slider").slider("value"))
+          .css("background", getColor($("#slider").slider("value")))
       );
 
       // bind click events
